@@ -8,7 +8,6 @@
       --white: #ffffff;
       --navy-blue: #203660;
       --wireframe: 5px solid black;
-
   }
 
   body {
@@ -22,7 +21,7 @@
       color: var(--navy-blue);
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      align-items: center;
       background-size: cover;
       background-color: var(--navy-blue);
       position: -webkit-sticky;
@@ -35,16 +34,16 @@
   header h1 {
       font-weight: bold;
       font-size: 30px;
-      text-align: center;
       color: var(--white);
       border: var(--wireframe);
       flex: 1 0 0;
+      padding: 10px;
   }
 
   header a {
       color: var(--white);
       text-decoration: none;
-      
+      font-weight: bold;
   }
 
   header nav ul {
@@ -53,12 +52,20 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    
+
   }
 
-  header nav ul li {
+  header nav ul li a{
       padding: 10px;
+      margin: 10px;
+      align-items: center;
       border: var(--wireframe);
+  }
+
+  header nav ul li a:hover {
+      background-color: var(--white);
+      color: var(--navy-blue);
+      border-radius: 10px;
   }
   /* HEADER STYLES END */
 
@@ -69,15 +76,35 @@
       display: flex;
       flex-wrap: wrap;
       border: var(--wireframe);
+      /* main/section = here */
   }
 
   .section-title {
       padding: 10px;
       align-items: center;
+      flex: 0 0 30%;
+      border-right: 5px solid var(--navy-blue);
+      /* TODO: add side border to separate sections. Text right. Text stacked. */
   }
 
   .section-content {
       padding: 10px;
       align-items: center;
       justify-content: center;
+      flex: 1 0 0
   }
+
+  /* contact me list styles */
+  .section-content ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+  }
+
+  .section-content ul li {
+      padding: 10px;
+      margin: 10px;
+      border: var(--wireframe);
+  }
+
+  /*TODO make images width 100% of parent */
