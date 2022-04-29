@@ -6,24 +6,28 @@
 
   :root {
       --white: #ffffff;
-      --navy-blue: #203660;
-      --wireframe: 5px solid black;
+      --maroon: #5c2331;
+      --dark-maroon: #37151e;
+      --black: #000000;
+      --wireframe: none;
   }
 
   body {
-      color: var(--navy-blue);
+      color: var(--dark-maroon);
       font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
   }
 
   /* HEADER STYLES START */
   header {
-      padding: 20px;
-      color: var(--navy-blue);
+      padding: 10px;
+      color: var(--maroon);
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: center;
       background-size: cover;
-      background-color: var(--navy-blue);
+      background-color: var(--maroon);
       position: -webkit-sticky;
       position: sticky;
       top: 0;
@@ -37,7 +41,8 @@
       color: var(--white);
       border: var(--wireframe);
       flex: 1 0 0;
-      padding: 10px;
+      padding: 0 10px;
+      margin: 0 10px;
   }
 
   header a {
@@ -46,65 +51,103 @@
       font-weight: bold;
   }
 
+/* PARENT */
   header nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     list-style: none;
-
+    margin: 10px;
   }
 
+/* CHILD (a for hover effects) */
   header nav ul li a{
       padding: 10px;
       margin: 10px;
       align-items: center;
       border: var(--wireframe);
+      font-size: 75%;
   }
 
   header nav ul li a:hover {
       background-color: var(--white);
-      color: var(--navy-blue);
+      color: var(--maroon);
       border-radius: 10px;
   }
   /* HEADER STYLES END */
 
+  /* FOOTER STYLES START */
+  footer {
+      background-color: var(--maroon);
+      background-size: cover;
+      padding: 15px;
+  }
+
+  /* FOOTER STYLES END */
+
+/* bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb */
+
   /* MAIN SECTIONS START */
-  .main-section {
-      padding: 10px;
-      margin: 10px;
-      display: flex;
-      flex-wrap: wrap;
+  main section {
       border: var(--wireframe);
-      /* main/section = here */
+      display: flex;
+      flex-direction: column;
+      border-bottom: 10px solid var(--maroon);
   }
 
-  .section-title {
-      padding: 10px;
-      align-items: center;
-      flex: 0 0 30%;
-      border-right: 5px solid var(--navy-blue);
-      /* TODO: add side border to separate sections. Text right. Text stacked. */
-  }
-
-  .section-content {
-      padding: 10px;
-      align-items: center;
+  main section div {
+      border: var(--wireframe);
+      margin: 10 px;
+      display: flex;
       justify-content: center;
-      flex: 1 0 0
+      align-items: center;
+      flex-direction: column;
   }
 
-  /* contact me list styles */
-  .section-content ul {
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-  }
-
-  .section-content ul li {
+  main section h2 {
+      font-weight: bold;
       padding: 10px;
-      margin: 10px;
-      border: var(--wireframe);
+      border-bottom: 2px solid var(--maroon);
+      width: 80%;
   }
 
-  /*TODO make images width 100% of parent */
+  main section div article {
+      margin: 15px;
+  }
+
+  main section div article img {
+      width: 80%;
+      border-radius: 7px;
+  }
+
+  .about-me-text {
+      text-align: left;
+  }
+
+  .work-card {
+      position: relative;
+  }
+
+  .work-card h3 {
+      position: absolute;
+      margin-bottom: 10px;
+      margin-right: 150px;
+      padding: 5px;
+      color: var(--maroon);
+      background-color: rgba(255, 255, 255, .5);
+      border-radius: 5px;
+  }
+
+  .work-card h3 span {
+      font-size: 10px;
+  }
+
+  .run-buddy h3 {
+      /* TODO individualize the projects h3 positioning */
+  }
+
+  #contact-me div ul {
+      display: flex;
+      flex-direction: row;
+  }

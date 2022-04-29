@@ -19,82 +19,129 @@
             <a href="#about-me">About Me</a>
           </li>
           <li>
-            <a href="#contact-me">Contact Me</a>
+            <a href="#my-work">My Work</a>
           </li>
           <li>
-            <a href="#my-work">My Work</a>
+            <a href="#contact-me">Contact Me</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <!-- hero section start -->
-    <section>
-      <p></p>
-    </section>
-
     <!-- main content -->
     <main>
+      <!-- hero section start -->
+      <!-- TODO add image for hero -->
+      <section>
+        <p></p>
+      </section>
       <!-- about me -->
-      <section class="main-section" class="side-border" id="about-me">
-        <div class="section-title">
+      <section id="about-me">
+        <div class="about-me-header">
           <h2>About Me</h2>
         </div>
-        <div class="section-content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus
-            ultricies tristique nulla aliquet. In ante metus dictum at tempor.
-            Eu consequat ac felis donec et odio pellentesque diam volutpat.
-            Massa placerat duis ultricies lacus sed turpis. Quis varius quam
-            quisque id. Sagittis eu volutpat odio facilisis mauris sit amet
-            massa vitae. Porta lorem mollis aliquam ut porttitor leo a diam
-            sollicitudin.
-          </p>
-          <p>
-            A diam maecenas sed enim ut sem viverra aliquet. Sed libero enim sed
-            faucibus turpis. In hac habitasse platea dictumst vestibulum
-            rhoncus. Ut aliquam purus sit amet luctus venenatis. Tristique
-            senectus et netus et.
-          </p>
+        <!-- TODO assign flex row for monitor media query -->
+        <div class="flex-row-monitor">
+          <article>
+            <img
+              src="./assets/images/josie-headshot.jpg"
+              alt="Josie Franklin"
+            />
+          </article>
+          <!-- text article -->
+          <article class="about-me-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus
+              ultricies tristique nulla aliquet. In ante metus dictum at tempor.
+              Eu consequat ac felis donec et odio pellentesque diam volutpat.
+              Massa placerat duis ultricies lacus sed turpis. Quis varius quam
+              quisque id. Sagittis eu volutpat odio facilisis mauris sit amet
+              massa vitae. Porta lorem mollis aliquam ut porttitor leo a diam
+              sollicitudin.
+            </p>
+            <p>
+              A diam maecenas sed enim ut sem viverra aliquet. Sed libero enim
+              sed faucibus turpis. In hac habitasse platea dictumst vestibulum
+              rhoncus. Ut aliquam purus sit amet luctus venenatis. Tristique
+              senectus et netus et.
+            </p>
+          </article>
         </div>
       </section>
 
       <!-- work -->
-      <section class="main-section" class="side-border" id="my-work">
+      <section id="my-work">
         <div class="section-title">
           <h2>My Work</h2>
         </div>
         <div class="section-content">
-          <!-- TODO: add hover effects -->
-          <a href=""
-            ><img src="https://via.placeholder.com/150" alt="Run Bdddy"
-          /></a>
-          <a href=""><img src="https://via.placeholder.com/150" alt="" /></a>
-          <a href=""><img src="https://via.placeholder.com/150" alt="" /></a>
-          <a href=""><img src="https://via.placeholder.com/150" alt="" /></a>
-          <a href=""><img src="https://via.placeholder.com/150" alt="" /></a>
+          <!-- Run Buddy image/link and blurb -->
+          <article>
+            <div class="work-card" class="run-buddy">
+              <a href="">
+                <img src="./assets/images/run-buddy.jpg" alt="Run Buddy" />
+              </a>
+              <h3>Run Buddy<br /><span>(HTML/CSS)</span></h3>
+            </div>
+            <p>
+              Home page for a physical training company that uses HTMl and CSS.
+            </p>
+          </article>
+          <!-- TODO create placeholders -->
+          <article>
+            <div class="work-card">
+              <a href="">
+                <img
+                  src="https://via.placeholder.com/350x150"
+                  alt="placeholder"
+                />
+              </a>
+              <h3>Furture Project</h3>
+            </div>
+            <p>Coming soon!</p>
+          </article>
+          <article>
+            <a href="">
+              <img
+                src="https://via.placeholder.com/350x150"
+                alt="placeholder"
+              />
+            </a>
+            <h3>Furture Project</h3>
+            <p>Coming soon!</p>
+          </article>
+          <article>
+            <a href="">
+              <img
+                src="https://via.placeholder.com/350x150"
+                alt="placeholder"
+              />
+            </a>
+            <h3>Furture Project</h3>
+            <p>Coming soon!</p>
+          </article>
         </div>
       </section>
 
       <!-- contact -->
-      <section class="main-section" class="side-border" id="contact-me">
+      <section id="contact-me">
         <div class="section-title">
           <h2>Contact Me</h2>
         </div>
         <div class="section-content">
           <ul>
             <li>
+              <!-- TODO add icon -->
               <p>Phone Number</p>
             </li>
             <li>
+              <!-- TODO add icon -->
               <a>Email</a>
             </li>
             <li>
+              <!-- TODO add icon -->
               <a>LinkdIn</a>
-            </li>
-            <li>
-              <a>Facebook</a>
             </li>
           </ul>
         </div>
