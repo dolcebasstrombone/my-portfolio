@@ -121,8 +121,14 @@
       border-radius: 7px;
   }
 
-  .about-me-text {
-      text-align: left;
+  .text-block {
+      width: 80%;
+  }
+
+  .work-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
   }
 
   .work-card {
@@ -151,4 +157,24 @@
   #contact-me div ul {
       display: flex;
       flex-direction: row;
+      list-style: none;
+      font-size: 10px;
+      align-items: center;
+  }
+
+  #contact-me div ul li {
+      margin: 15px;
+      padding: 15px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+  #contact-me img {
+      width: 15px;
+      height: 15px;
+  }
+
+  #contact-me a {
+      margin: 5px;
   }
