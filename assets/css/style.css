@@ -201,6 +201,8 @@ main section div article img {
 
 #contact-me a {
   margin: 5px;
+  text-decoration: none;
+  color: var(--dark-maroon);
 }
 
 @media screen and (min-width: 568px) {
