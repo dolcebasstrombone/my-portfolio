@@ -31,15 +31,15 @@
     <!-- main content -->
     <main>
       <!-- hero section start -->
-      <section class="hero">
-      </section>
+      <section class="hero"></section>
+
       <!-- about me -->
       <section id="about-me">
         <div class="about-me-header">
           <h2>About Me</h2>
         </div>
         <!-- TODO assign flex row for monitor media query -->
-        <div class="flex-row-monitor">
+        <div class="flex-row-monitor-about">
           <article>
             <img
               src="./assets/images/josie-headshot.jpg"
@@ -73,56 +73,49 @@
         <div>
           <h2>My Work</h2>
         </div>
-        <div>
+        <div class="work-wrapper">
           <!-- Run Buddy image/link and blurb -->
-          <article class="work-block" >
+          <article class="work-block">
             <div class="work-card" id="run-buddy">
-              <a href="https://dolcebasstrombone.github.io/run-buddy/" target="blank">
-                <img src="./assets/images/run-buddy.jpg" alt="Run Buddy" />
-              </a>
+              <a
+                href="https://dolcebasstrombone.github.io/run-buddy/"
+                target="blank"
+              ></a>
               <h3>Run Buddy<br /><span>(HTML/CSS)</span></h3>
             </div>
-            <p class="text-block">
-              Home page for a physical training company.
-            </p>
+            <p class="text-block">Home page for a physical training company.</p>
           </article>
-          <!-- TODO create placeholders -->
-          <article class="work-block">
-            <div class="work-card">
-              <a href="">
-                <img
-                  src="https://via.placeholder.com/350x150/b9b8ac/b9b8ac?text=-"
-                  alt="placeholder"
-                />
-              </a>
-              <h3>Future Project</h3>
-            </div>
-            <p class="text-block">Coming soon!</p>
-          </article>
-          <article class="work-block">
-            <div class="work-card">
-              <a href="">
-                <img
-                  src="https://via.placeholder.com/350x150/b9b8ac/b9b8ac?text=-"
-                  alt="placeholder"
-                />
-              </a>
-              <h3>Future Project</h3>
-            </div>
-            <p class="text-block">Coming soon!</p>
-          </article>
-          <article class="work-block">
-            <div class="work-card">
-              <a href="">
-                <img
-                  src="https://via.placeholder.com/350x150/b9b8ac/b9b8ac?text=-"
-                  alt="placeholder"
-                />
-              </a>
-              <h3>Future Project</h3>
-            </div>
-            <p class="text-block">Coming soon!</p>
-          </article>
+          <!-- Placeholder cards -->
+          <div class="flex-row-monitor-work">
+            <article class="work-block">
+              <div class="work-card">
+                <a href=""></a>
+                <h3>Future Project</h3>
+              </div>
+              <p class="text-block">Coming soon!</p>
+            </article>
+            <article class="work-block">
+              <div class="work-card">
+                <a href=""></a>
+                <h3>Future Project</h3>
+              </div>
+              <p class="text-block">Coming soon!</p>
+            </article>
+            <article class="work-block">
+              <div class="work-card">
+                <a href=""></a>
+                <h3>Future Project</h3>
+              </div>
+              <p class="text-block">Coming soon!</p>
+            </article>
+            <article class="work-block">
+              <div class="work-card">
+                <a href=""></a>
+                <h3>Future Project</h3>
+              </div>
+              <p class="text-block">Coming soon!</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -134,15 +127,15 @@
         <div class="section-content">
           <ul>
             <li>
-              <img src="./assets/images/phone-icon.png" alt="">
+              <img src="./assets/images/phone-icon.png" alt="" />
               <a>Phone Number</a>
             </li>
             <li>
-              <img src="./assets/images/email-icon.png" alt="">
+              <img src="./assets/images/email-icon.png" alt="" />
               <a>Email</a>
             </li>
             <li>
-              <img src="./assets/images/linkedin-icon.png">
+              <img src="./assets/images/linkedin-icon.png" />
               <a>LinkdIn</a>
             </li>
           </ul>
