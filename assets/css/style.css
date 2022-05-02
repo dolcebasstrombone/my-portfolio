@@ -221,7 +221,6 @@ main section div article img {
   #run-buddy {
     width: 80vw;
     height: 20vw;
-    margin-bottom: 10px;
   }
 
   #run-buddy h3 {
@@ -232,6 +231,10 @@ main section div article img {
 
   #run-buddy h3 span {
     font-size: 20px;
+  }
+
+  #run-buddy-text {
+    margin-top: 10px;
   }
 
   .work-card {
