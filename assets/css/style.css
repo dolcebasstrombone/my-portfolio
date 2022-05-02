@@ -162,10 +162,10 @@ main section div article img {
 }
 
 #run-buddy {
-    background-image: url("../images/run-buddy.jpg");
-    background-size: cover;
-    background-position: center;
-    background-position: right bottom;
+  background-image: url("../images/run-buddy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-position: right bottom;
 }
 
 #run-buddy h3 {
@@ -204,55 +204,53 @@ main section div article img {
 }
 
 @media screen and (min-width: 568px) {
-    header h1 {
-        text-align: left;
-    }
+  header h1 {
+    text-align: left;
+  }
 
-    .flex-row-monitor-about {
-        flex-direction: row;
-    }
+  .flex-row-monitor-about {
+    flex-direction: row;
+  }
 
-    .flex-row-monitor-about article {
-        width: 40%;
-    }
-
+  .flex-row-monitor-about article {
+    width: 40%;
+  }
 }
 
 @media screen and (min-width: 790px) {
+  .flex-row-monitor-work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-    .flex-row-monitor-work {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  .flex-row-monitor-work article {
+    width: 40%;
+  }
 
-    .flex-row-monitor-work article {
-        width: 40%;
-    }
+  #run-buddy {
+    width: 80vw;
+    height: 20vw;
+    margin-bottom: 10px;
+  }
 
-    #run-buddy {
-        width: 80vw;
-        height: 20vw;
-        margin-bottom: 10px;
-    }
+  #run-buddy h3 {
+    font-size: 40px;
+    margin-top: -1vw;
+    margin-right: 40vw;
+  }
 
-    #run-buddy h3 {
-        font-size: 40px;
-        margin-top: -1vw;
-        margin-right: 40vw;
-    }
+  #run-buddy h3 span {
+    font-size: 20px;
+  }
 
-    #run-buddy h3 span {
-        font-size: 20px;
-    }
+  .work-card {
+    width: 35vw;
+    height: 8.75vw;
+  }
 
-    .work-card {
-        width: 35vw;
-        height: 8.75vw;
-    }
-
-    .work-card h3 {
-        margin-left: -7vw;
-    }
+  .work-card h3 {
+    margin-left: -7vw;
+  }
 }
