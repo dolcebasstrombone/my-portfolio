@@ -163,6 +163,13 @@ main section div article img {
   margin-right: 150px;
 }
 
+#game-search {
+  background-image: url("../images/game-search.png");
+  background-size: cover;
+  background-position: center;
+  background-position: left top;
+}
+
 #contact-me div ul {
   display: flex;
   flex-direction: row;
