@@ -170,6 +170,13 @@ main section div article img {
   background-position: left top;
 }
 
+#jokr {
+  background-image: url("../images/jokr.png");
+  background-size: cover;
+  background-position: center;
+  background-position: left top;
+}
+
 #contact-me div ul {
   display: flex;
   flex-direction: row;
